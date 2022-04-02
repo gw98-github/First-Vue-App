@@ -7,7 +7,7 @@
           <div>
             <h3>{{ item.title }}</h3>
           </div>
-          <router-link :to="item.link">
+          <router-link :to="item.link" class="grid-element-center">
             <button type="button" class="btn btn-primary">
               Przejdź do strony
             </button></router-link
@@ -44,7 +44,7 @@ export default {
 .main-container {
 }
 .table {
-  margin: 3em 8em 0em 8em;
+  margin: 3em 16em 0em 16em;
 }
 h1 {
   margin-top: 1em;
@@ -52,7 +52,7 @@ h1 {
 }
 .main-grid {
   display: grid;
-  width: calc(100% - 16em);
+  width: calc(100% - 32em);
   grid-template-columns: repeat(auto-fit);
   outline: 5px solid green;
   padding: 1px;
@@ -60,9 +60,12 @@ h1 {
 .line-grid {
   outline: 1px solid black;
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr;
 }
-button {
-  width: 90%;
+
+.grid-element-center {
+  justify-self: right;
+  align-self: center;
+  margin-right: 1em;
 }
 </style>
