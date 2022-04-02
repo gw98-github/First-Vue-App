@@ -42,7 +42,7 @@ export default {
 
 <style>
 .table {
-  margin: 3em 16em 0em 16em;
+  margin-top: 3em;
 }
 h1 {
   margin-top: 1em;
@@ -51,6 +51,7 @@ h1 {
 .main-grid {
   display: grid;
   width: calc(100% - 32em);
+  margin: auto;
   grid-template-columns: repeat(auto-fit);
   outline: 5px solid green;
   padding: 1px;
