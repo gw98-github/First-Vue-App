@@ -1,5 +1,5 @@
 <template>
-  <div class="main-container">
+  <div>
     <h1>Strona do testowania Vue.js</h1>
     <div class="table">
       <div class="main-grid">
@@ -41,8 +41,6 @@ export default {
 </script>
 
 <style>
-.main-container {
-}
 .table {
   margin: 3em 16em 0em 16em;
 }
