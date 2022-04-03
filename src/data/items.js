@@ -1,5 +1,6 @@
-import StartingPage from "../views/starting-page/StartingPage.vue";
-import HtmlTesting from "../views/html-testing/HtmlTesting.vue";
+import StartingPage from "@/views/starting-page/StartingPage.vue";
+import HtmlTesting from "@/views/html-testing/HtmlTesting.vue";
+import TodoApp from "@/components/todo-app/TodoApp.vue";
 import { shallowRef } from "vue";
 const items = [
   {
@@ -13,6 +14,12 @@ const items = [
     desc: "",
     link: "html-testing",
     component: shallowRef(HtmlTesting),
+  },
+  {
+    title: "Aplikacja TODO z poradnika",
+    desc: "",
+    link: "todo-app",
+    component: shallowRef(TodoApp),
   },
 ];
 
