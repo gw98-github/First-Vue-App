@@ -1,5 +1,5 @@
-import StartingPage from "./views/starting-page/StartingPage.vue";
-import HtmlTesting from "./views/html-testing/HtmlTesting.vue";
+import StartingPage from "../views/starting-page/StartingPage.vue";
+import HtmlTesting from "../views/html-testing/HtmlTesting.vue";
 import { shallowRef } from "vue";
 const items = [
   {

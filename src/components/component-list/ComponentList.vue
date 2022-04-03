@@ -22,7 +22,7 @@
 </template>
 
 <script>
-import items from "@/items";
+import items from "@/data/items";
 
 export default {
   data() {
