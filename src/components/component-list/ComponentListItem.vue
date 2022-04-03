@@ -1,6 +1,8 @@
 <template>
-  <div>Item {{ $route.params.link }}</div>
-  <component :is="component"></component>
+  <h1>{{ renderedItem.title }}</h1>
+  <div class="component-container">
+    <component :is="renderedItem.component"></component>
+  </div>
 </template>
 
 <script>
@@ -11,9 +13,9 @@ export default {
   data() {
     return {
       items: items,
-      component: items.find(
+      renderedItem: items.find(
         (element) => element.link === this.$route.params.link
-      ).component,
+      ),
     };
   },
   methods: {},
@@ -21,4 +23,13 @@ export default {
 </script>
 
 <style>
+h1 {
+  margin-top: 1em;
+  text-align: center;
+}
+.component-container {
+  width: 90%;
+  margin: auto;
+  outline: 5px solid green;
+}
 </style>
