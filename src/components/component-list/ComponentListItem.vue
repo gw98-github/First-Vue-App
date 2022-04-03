@@ -37,7 +37,7 @@ h1 {
   margin-bottom: 3em;
 }
 .component-container {
-  width: 90%;
+  width: 80%;
   margin: auto;
   outline: 5px solid green;
 }

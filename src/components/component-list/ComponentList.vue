@@ -43,7 +43,7 @@ h1 {
 }
 .main-grid {
   display: grid;
-  width: calc(100% - 32em);
+  width: 80%;
   margin: auto;
   grid-template-columns: repeat(auto-fit);
   outline: 5px solid green;
