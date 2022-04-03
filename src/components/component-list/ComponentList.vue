@@ -7,8 +7,11 @@
           <div>
             <h3>{{ item.title }}</h3>
           </div>
-          <router-link :to="item.link" class="grid-element-center">
-            <button type="button" class="btn btn-primary">
+          <router-link
+            :to="{ name: 'Item', params: { link: item.link } }"
+            class="grid-element-center"
+          >
+            <button type="button" class="btn btn-success">
               Przejdź do strony
             </button></router-link
           >
@@ -19,22 +22,12 @@
 </template>
 
 <script>
+import items from "@/items";
+
 export default {
   data() {
     return {
-      items: [
-        {
-          title: "Strona startowa Vue.js",
-          desc: "",
-          link: "/starting-page",
-        },
-        {
-          title: "Testowanie elementów HTML",
-          desc: "",
-          link: "/html-testing",
-        },
-        { title: "Item", desc: "", link: "/item" },
-      ],
+      items: items,
     };
   },
 };
