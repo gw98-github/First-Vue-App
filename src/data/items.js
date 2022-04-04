@@ -1,6 +1,7 @@
 import StartingPage from "@/views/starting-page/StartingPage.vue";
 import HtmlTesting from "@/views/html-testing/HtmlTesting.vue";
 import TodoApp from "@/components/todo-app/TodoApp.vue";
+import DirectivesExamples from "@/views/directives-examples/DirectivesExamples.vue";
 import { shallowRef } from "vue";
 const items = [
   {
@@ -20,6 +21,12 @@ const items = [
     desc: "",
     link: "todo-app",
     component: shallowRef(TodoApp),
+  },
+  {
+    title: "Różne dyrektywy Vue",
+    desc: "",
+    link: "directives",
+    component: shallowRef(DirectivesExamples),
   },
 ];
 
