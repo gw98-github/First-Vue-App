@@ -5,6 +5,7 @@ import DirectivesExamples from "@/views/directives-examples/DirectivesExamples.v
 import HandlingLoading from "@/components/handling-loading/HandlingLoading.vue";
 import DebounceUsage from "@/components/debounce/DebounceUsage.vue";
 import ForLoopExamplesVue from "@/views/for-examples/ForLoopExamples.vue";
+import InputsExamples from "@/views/inputs-examples/InputsExamples.vue";
 import { shallowRef } from "vue";
 const items = [
   {
@@ -48,6 +49,12 @@ const items = [
     desc: "",
     link: "for-examples",
     component: shallowRef(ForLoopExamplesVue),
+  },
+  {
+    title: "Inputy - różne przykłady użycia",
+    desc: "",
+    link: "inputs-examples",
+    component: shallowRef(InputsExamples),
   },
 ];
 

@@ -39,6 +39,7 @@ h1 {
 .component-container {
   width: 80%;
   margin: auto;
+  padding: 2em;
   outline: 5px solid green;
 }
 </style>

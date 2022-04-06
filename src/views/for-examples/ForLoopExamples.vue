@@ -1,5 +1,5 @@
 <template>
-  <div id="main">
+  <div>
     <h5>Prosta pętla</h5>
     <span v-for="item in simpleItems" :key="item.id">{{ item }} - </span>
     <hr />
@@ -64,7 +64,4 @@ export default {
 </script>
 
 <style>
-#main {
-  padding: 2em;
-}
 </style>
