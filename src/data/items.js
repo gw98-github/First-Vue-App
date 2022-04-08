@@ -6,6 +6,7 @@ import HandlingLoading from "@/components/handling-loading/HandlingLoading.vue";
 import DebounceUsage from "@/components/debounce/DebounceUsage.vue";
 import ForLoopExamplesVue from "@/views/for-examples/ForLoopExamples.vue";
 import InputsExamples from "@/views/inputs-examples/InputsExamples.vue";
+import LifecycleHooks from "@/views/lifecycle-hooks/LifecycleHooks.vue";
 import { shallowRef } from "vue";
 const items = [
   {
@@ -55,6 +56,12 @@ const items = [
     desc: "",
     link: "inputs-examples",
     component: shallowRef(InputsExamples),
+  },
+  {
+    title: "Lifecycle - pełen cycle lifecycle hooks",
+    desc: "",
+    link: "lifecycle-hooks",
+    component: shallowRef(LifecycleHooks),
   },
 ];
 
