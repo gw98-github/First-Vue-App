@@ -8,8 +8,12 @@
 </template>
 
 <script>
+import Item from "./TodoApp.vue";
+
 export default {
-  props: ["item"],
+  props: {
+    item: Item,
+  },
   methods: {
     sendCompletedStatus() {
       this.$emit("completedClicked", this.item.id);

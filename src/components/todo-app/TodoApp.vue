@@ -17,23 +17,29 @@
 
 <script>
 import TodoItem from "./TodoItem.vue";
+
+export class Item {
+  constructor(title, completed, id) {
+    this.title = title;
+    this.completed = completed;
+    this.id = id;
+  }
+}
+
 export default {
   data() {
     return {
       newItem: "",
       items: [
-        { title: "Zrobić zakupy", completed: false, id: 1 },
-        { title: "Nagrać kurs", completed: true, id: 2 },
+        new Item("Zrobić zakupy", false, 1),
+        new Item("Nagrać kurs", true, 2),
       ],
     };
   },
   methods: {
     addItem() {
-      this.items.push({
-        title: this.newItem,
-        completed: false,
-        id: Math.random(),
-      });
+      this.items.push(new Item(this.newItem, false, Math.random()));
+      console.log(this.items);
       this.newItem = "";
     },
     setCompletedStatus(id) {
