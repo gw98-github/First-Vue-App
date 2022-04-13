@@ -1,7 +1,7 @@
 <template>
   <button @click="show = true">Pokaż komponent</button>
   <div v-if="show"><AsyncComp></AsyncComp></div>
-  <div v-if="show">Drugi comp</div>
+  <div v-if="show">Drugi komponent po 2s:</div>
   <div v-if="show"><AsyncComp2></AsyncComp2></div>
 </template>
 
@@ -14,7 +14,7 @@ import LoadingComponent from "./LoadingComponent.vue";
 const AsyncComp = defineAsyncComponent({
   loader: () => import("./ExampleDataComponent.vue"),
   loadingComponent: LoadingComponent,
-  delay: 2000,
+  delay: 0,
   errorComponent: ErrorComponent,
 
   timeout: 3000,
@@ -22,7 +22,6 @@ const AsyncComp = defineAsyncComponent({
 
 const AsyncComp2 = defineAsyncComponent(() => {
   return new Promise((resolve) => {
-    resolve(LoadingComponent);
     setTimeout(() => {
       resolve(import("./ExampleDataComponent.vue"));
     }, 2000);
