@@ -7,6 +7,7 @@ import DebounceUsage from "@/components/debounce/DebounceUsage.vue";
 import ForLoopExamplesVue from "@/views/for-examples/ForLoopExamples.vue";
 import InputsExamples from "@/views/inputs-examples/InputsExamples.vue";
 import LifecycleHooks from "@/views/lifecycle-hooks/LifecycleHooks.vue";
+import SlotsExamples from "@/views/slots-examples/SlotsExamples.vue";
 import { shallowRef } from "vue";
 const items = [
   {
@@ -62,6 +63,12 @@ const items = [
     desc: "",
     link: "lifecycle-hooks",
     component: shallowRef(LifecycleHooks),
+  },
+  {
+    title: "Slots - przykłady użycia",
+    desc: "",
+    link: "slots-examples",
+    component: shallowRef(SlotsExamples),
   },
 ];
 
