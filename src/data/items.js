@@ -1,13 +1,14 @@
 import StartingPage from "@/views/starting-page/StartingPage.vue";
-import HtmlTesting from "@/views/html-testing/HtmlTesting.vue";
-import TodoApp from "@/components/todo-app/TodoApp.vue";
-import DirectivesExamples from "@/views/directives-examples/DirectivesExamples.vue";
+import HtmlTesting from "@/views/HtmlTesting.vue";
+import TodoApp from "@/views/todo-app/TodoApp.vue";
+import DirectivesExamples from "@/views/DirectivesExamples.vue";
 import HandlingLoading from "@/components/handling-loading/HandlingLoading.vue";
 import DebounceUsage from "@/components/debounce/DebounceUsage.vue";
 import ForLoopExamplesVue from "@/views/for-examples/ForLoopExamples.vue";
-import InputsExamples from "@/views/inputs-examples/InputsExamples.vue";
-import LifecycleHooks from "@/views/lifecycle-hooks/LifecycleHooks.vue";
+import InputsExamples from "@/views/InputsExamples.vue";
+import LifecycleHooks from "@/views/LifecycleHooks.vue";
 import SlotsExamples from "@/views/slots-examples/SlotsExamples.vue";
+import ComposableExamples from "@/components/composable-examples/ComposableExamples.vue";
 import { shallowRef } from "vue";
 const items = [
   {
@@ -69,6 +70,12 @@ const items = [
     desc: "",
     link: "slots-examples",
     component: shallowRef(SlotsExamples),
+  },
+  {
+    title: "Composable - przykłady użycia",
+    desc: "",
+    link: "composable-examples",
+    component: shallowRef(ComposableExamples),
   },
 ];
 
