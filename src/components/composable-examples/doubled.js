@@ -1,6 +1,6 @@
 import { ref } from "vue";
-export function useDoubled() {
-  const value = ref(0);
+export function useDoubled(initVal) {
+  const value = ref(initVal);
   const double = () => {
     value.value *= 2;
   };

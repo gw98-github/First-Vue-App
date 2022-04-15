@@ -12,8 +12,9 @@
 import { useMouse } from "./mouse.js";
 import { useDoubled } from "./doubled.js";
 
+const initVal = 12;
 const { x, y } = useMouse();
-let { value, double } = useDoubled();
+const { value, double } = useDoubled(initVal);
 </script>
 
 <style>
