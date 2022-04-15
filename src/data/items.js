@@ -35,7 +35,7 @@ const items = [
     component: shallowRef(DirectivesExamples),
   },
   {
-    title: "Ładowanie komponentu - // delay nie działa",
+    title: "Ładowanie komponentu z delayem",
     desc: " 1. https://medium.com/js-dojo/7-vue-patterns-that-you-should-be-using-more-often-b13cde4d2ae6 https://www.youtube.com/watch?v=muaBCsVE-NM&list=WL&index=2",
     link: "handling-loading",
     component: shallowRef(HandlingLoading),
