@@ -9,6 +9,7 @@ import InputsExamples from "@/views/InputsExamples.vue";
 import LifecycleHooks from "@/views/LifecycleHooks.vue";
 import SlotsExamples from "@/views/slots-examples/SlotsExamples.vue";
 import ComposableExamples from "@/components/composable-examples/ComposableExamples.vue";
+import KeepAliveExampleVue from "@/views/keep-alive/KeepAliveExample.vue";
 import { shallowRef } from "vue";
 const items = [
   {
@@ -76,6 +77,12 @@ const items = [
     desc: "",
     link: "composable-examples",
     component: shallowRef(ComposableExamples),
+  },
+  {
+    title: "KeepAlive - przykłady użycia",
+    desc: "",
+    link: "keep-alive",
+    component: shallowRef(KeepAliveExampleVue),
   },
 ];
 
